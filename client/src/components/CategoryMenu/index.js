@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useQuery } from "@apollo/client";
 
-//TODO: remove the line below for 'useStoreContext. We will use React-Redux to generate state and dispatch method
-import { useStoreContext } from "../../utils/GlobalState";
-//TODO: import { useDispatch, useSelector } from 'react-redux';
+//TOD0: remove the line below for 'useStoreContext. We will use React-Redux to generate state and dispatch method
+
+import { useDispatch, useSelector } from 'react-redux';
 
 import {
   UPDATE_CATEGORIES,
@@ -14,10 +14,12 @@ import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 
 function CategoryMenu() {
-  // TODO: remove the line below. We will use useDispatch and useSelector to generate state and dispatch
-  const [state, dispatch] = useStoreContext();
-  // TODO: Create a const variable 'dispatch' and assign the returned value from useDispatch()
-  // TODO: create a const varailbe 'state' and assign the returned value from useSelector(...)
+  // TOD0: remove the line below. We will use useDispatch and useSelector to generate state and dispatch
+ 
+  // TOD0: Create a const variable 'dispatch' and assign the returned value from useDispatch()
+  const dispatch = useDispatch();
+  // TOD0: create a const varailbe 'state' and assign the returned value from useSelector(...)
+  const state = useSelector((state) => state);
   // Hint: search 28-Stu_Mini-Project for how to create the two variables, dispatch and state
 
   const { categories } = state;

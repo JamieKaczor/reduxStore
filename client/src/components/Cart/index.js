@@ -5,19 +5,21 @@ import { QUERY_CHECKOUT } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
-//TODO: remove the line below for 'useStoreContext. We will use React-Redux to generate state and dispatch method
-import { useStoreContext } from '../../utils/GlobalState';
-//TODO: import { useDispatch, useSelector } from 'react-redux';
+//TOD0: remove the line below for 'useStoreContext. We will use React-Redux to generate state and dispatch method
+
+import { useDispatch, useSelector } from 'react-redux';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
-  // TODO: remove the line below. We will use useDispatch and useSelector to generate state and dispatch
-  const [state, dispatch] = useStoreContext();
-  // TODO: Create a const variable 'dispatch' and assign the returned value from useDispatch()
-  // TODO: create a const varailbe 'state' and assign the returned value from useSelector(...)
+  // TOD0: remove the line below. We will use useDispatch and useSelector to generate state and dispatch
+  
+  // TOD0: Create a const variable 'dispatch' and assign the returned value from useDispatch()
+  const dispatch = useDispatch();
+  // TOD0: create a const varailbe 'state' and assign the returned value from useSelector(...)
+  const state = useSelector((state) => state);
   // Hint: search 28-Stu_Mini-Project for how to create the two variables, dispatch and state
 
 
