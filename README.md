@@ -12,7 +12,7 @@ npm i, npm run seed, npm run develop
 
 ## Link to deployed site
 
-
+[reduxStore](https://reduxstorejjk.herokuapp.com/)
 
 ## Screenshots
 
