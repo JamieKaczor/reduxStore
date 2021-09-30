@@ -1,6 +1,13 @@
 # reduxStore
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Description
+## Table of Contents
+- [Overview](#overview)
+- [Link to deployed site](#link-to-deployed-site)
+- [Screenshots](#screenshots)
+- [Questions](#questions)
+
+## Overview
 
 In this unit, you learned how to manage global state using React’s Context API. The Context API is quickly gaining traction as a worthy alternative or perhaps even successor to other libraries that manage global state in tandem with React, such as Flux or MobX. Nonetheless, the open source JavaScript library Redux remains the industry standard for managing complex state in a large-scale React application, and you’ll likely encounter it on the job.
 
